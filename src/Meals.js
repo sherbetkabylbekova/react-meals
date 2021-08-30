@@ -39,8 +39,6 @@ const Meals = () => {
                     ))
                 }
             </div>
-
-
         </div>
     );
 };

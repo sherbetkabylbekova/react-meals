@@ -8,7 +8,7 @@ const Browse = () => {
     useEffect(() => {
         axios(`https://www.themealdb.com/api/json/v1/1/search.php?s=${params.name}`)
             .then(({data}) => setSearch(data.meals))
-    })
+    },[])
     return (
         <div className="container">
             <div className="row">

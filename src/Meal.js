@@ -15,10 +15,9 @@ const Meal = () => {
     useEffect(() => {
         axios(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${params.id}`)
             .then(({data}) => setFood(data.meals[0]))
-    }, [])
-    console.log(strIngredients)
+    },[params.id])
     return (
-        <div className="container">
+        <div className="container" key="id.meal">
             <div className="row">
                 <div  className="col-6">
                     <img src={food.strMealThumb} alt="" width={550}/>
