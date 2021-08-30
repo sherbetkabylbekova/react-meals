@@ -28,7 +28,7 @@ const Meals = () => {
             <div className="row">
                 {
                     meals.map(el => (
-                        <div className="col-3">
+                        <div className="col-3"  key={el.idMeal}>
                             <Link to={`/meal/${el.idMeal}`}>
 
                                 <img src={el.strMealThumb} alt="" width={300}/>

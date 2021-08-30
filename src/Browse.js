@@ -8,13 +8,13 @@ const Browse = () => {
     useEffect(() => {
         axios(`https://www.themealdb.com/api/json/v1/1/search.php?s=${params.name}`)
             .then(({data}) => setSearch(data.meals))
-    },[])
+    },[params.name])
     return (
         <div className="container">
             <div className="row">
                 {
                     search.map(el => (
-                        <div className="col-3">
+                        <div className="col-3"  key={el.idMeal}>
                             <Link to={`/meal/${el.idMeal}`}>
 
                                 <img src={el.strMealThumb} alt="" width={300}/>

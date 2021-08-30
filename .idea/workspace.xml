@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f6fa5e54-9236-435e-8628-65bef9027a06" name="Default Changelist" comment="second commit">
-      <change beforePath="$PROJECT_DIR$/src/Meal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Meal.js" afterDir="false" />
+    <list default="true" id="f6fa5e54-9236-435e-8628-65bef9027a06" name="Default Changelist" comment="secondery commit">
+      <change beforePath="$PROJECT_DIR$/src/Browse.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Browse.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Meals.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Meals.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +47,7 @@
       <updated>1630053659680</updated>
       <workItem from="1630053663525" duration="155000" />
       <workItem from="1630053824778" duration="8000" />
-      <workItem from="1630066097456" duration="15389000" />
+      <workItem from="1630066097456" duration="15693000" />
     </task>
     <task id="LOCAL-00001" summary="second commit">
       <created>1630291228789</created>
@@ -55,7 +56,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630291228789</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="secondery commit">
+      <created>1630291567387</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1630291567387</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -75,6 +83,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="second commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="second commit" />
+    <MESSAGE value="secondery commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="secondery commit" />
   </component>
 </project>
