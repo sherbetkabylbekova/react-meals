@@ -17,7 +17,7 @@ const Meal = () => {
             .then(({data}) => setFood(data.meals[0]))
     },[params.id])
     return (
-        <div className="container" key="id.meal">
+        <div className="container">
             <div className="row">
                 <div  className="col-6">
                     <img src={food.strMealThumb} alt="" width={550}/>
@@ -29,7 +29,7 @@ const Meal = () => {
                 <div className="ingr col-6 box">
                     {
                         strIngredients.map(el => (
-                            <div>
+                            <div key={el.idMeal}>
                                 <img src={`https://www.themealdb.com/images/ingredients/${el}.png`} alt="" width={100}/>
                                 <h5 className="name__ingr">{el}</h5>
                             </div>
