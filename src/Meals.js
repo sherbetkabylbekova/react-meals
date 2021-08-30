@@ -1,11 +1,15 @@
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
-import {Link} from "react-router-dom";
+import {Link, useHistory} from "react-router-dom";
 
 const Meals = () => {
     const [meals, setMeals] = useState([])
+    const history = useHistory()
     const [search, setSearch] = useState("")
     const handleSearch = () => {
+        if(search){
+            history.push(`/browse/${search}`)
+        }
 
 
     }
@@ -19,7 +23,7 @@ const Meals = () => {
             <h1 className="menu__title">Menu with dishes</h1>
             <div className="menu__search">
                 <input className="input__search" type="text" onChange={(e) => setSearch(e.target.value)}/>
-                <button onClick={handleSearch}>Search</button>
+                <button className="search__btn" onClick={handleSearch}>Search</button>
             </div>
             <div className="row">
                 {
