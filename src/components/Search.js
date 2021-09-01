@@ -24,4 +24,3 @@ const Search = () => {
 };
 
 export default Search;
-// hbojhbojbhoji
