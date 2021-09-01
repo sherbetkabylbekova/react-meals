@@ -11,7 +11,7 @@ const MealDetails = () => {
     const [readMore, setReadMore] = useState(false)
 
     useEffect(() => {
-        const fetchData = async () => {
+        const fetchInfo = async () => {
             const {data: {meals}} = await axios(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${params.id}`)
             const ingredientsList = Array(20).fill(0).reduce((acc, item, idx) => {
                 const ingredients = meals[0][`strIngredient${idx + 1}`]
@@ -21,7 +21,7 @@ const MealDetails = () => {
             setFood(meals[0])
             setIngredients(ingredientsList)
         }
-        fetchData()
+        fetchInfo()
     }, [params.id])
     const extraContent = <div>
         <p>{food.strInstructions}</p>

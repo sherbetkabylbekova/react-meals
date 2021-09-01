@@ -7,7 +7,7 @@ const Meals = () => {
     useEffect(() => {
         axios(`https://www.themealdb.com/api/json/v2/1/randomselection.php`)
             .then(({data}) => setMeals(data.meals))
-    }, [meals])
+    }, [])
 
     return (
         <div className="container">
